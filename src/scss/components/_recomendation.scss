@@ -1,0 +1,50 @@
+@import '../variables';
+
+.recomendation {
+	padding-bottom: 40px;
+
+	&__title {
+		font-weight: 700;
+		font-size: 16px;
+	}
+
+	& .main-title {
+		margin-bottom: 40px;
+	}
+
+	&__card {
+		
+		& > .row {
+			min-height: 100%;
+		}
+
+		&-top,
+		&-top > .img-fluid {
+			height: 100%;
+		}
+	}
+
+	& > .container > .row {
+		padding: 0 20px;
+	}
+
+}
+
+@media screen and (min-width: 1040px) {
+	.recomendation {
+		padding-bottom: 140px;
+
+		& > .container {
+			padding: 0 60px;
+		}
+	
+		&__title {
+			font-weight: 700;
+			font-size: 16px;
+		}
+
+		& .main-title {
+			margin-bottom: 100px;
+		}
+	}
+}

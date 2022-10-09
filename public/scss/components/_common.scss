@@ -1,0 +1,73 @@
+@import '../variables';
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat';
+	font-weight: normal;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+a {
+	color: inherit;
+}
+
+.wrapper {
+	overflow: hidden;
+	position: relative;
+	min-height: 100vh;
+}
+
+
+.container {
+	max-width: 1226px;
+}
+
+.list-wrap {
+	display: none;
+}
+
+.main-title {
+	font-weight: 700;
+	font-size: 24px;
+	color: $black;
+}
+
+.img-fluid {
+	min-width: 100%;
+	display: block;
+}
+
+@media screen and (min-width: 1040px) {
+	
+	.list-wrap {
+		position: absolute;
+		left: 0;
+		background: #FFFFFF;
+		border: 1px solid #000000;
+		border-radius: 10px;
+		box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+		
+		&::before {
+			content: "";
+			position: absolute;
+			top: -6px;
+			left: -1px;
+			width: 20px;
+			height: 28px;
+			transform: skewY(28deg);
+			background-color: $white;
+			border: 1px solid transparent;
+			border-left-color: $black;
+			border-top-color: $black;
+		}
+	}
+
+}
